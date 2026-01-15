@@ -1,8 +1,9 @@
-package es.nextdigital.demo;
+package entities;
 
 import java.math.BigDecimal;
 import java.util.UUID;
 
+import enumerado.CardType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;

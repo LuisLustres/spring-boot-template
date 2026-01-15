@@ -1,4 +1,4 @@
-package es.nextdigital.demo;
+package entities;
 
 import jakarta.persistence.*;
 import java.util.ArrayList;

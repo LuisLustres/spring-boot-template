@@ -1,4 +1,4 @@
-package es.nextdigital.demo;
+package entities;
 
 import jakarta.persistence.*;
 import java.math.BigDecimal;
@@ -18,6 +18,9 @@ public class Account {
     
     @Column(nullable = false, precision = 15, scale = 2)
     private BigDecimal balance = BigDecimal.ZERO; 
+    
+    @OneToMany(mappedBy = "account", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Transaction> transactions = new ArrayList<>();
     
     @Column(name = "iban", nullable = false, unique = true, length = 34)
     private String iban; 

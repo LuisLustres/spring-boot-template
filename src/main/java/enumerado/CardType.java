@@ -1,4 +1,4 @@
-package es.nextdigital.demo;
+package enumerado;
 
 public enum CardType {
 	DEBIT("Debito"), 
