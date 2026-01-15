@@ -17,7 +17,7 @@ public interface CustomerRepository extends JpaRepository<Customer, UUID> {
     // Buscar por número de cliente (debe ser único)
     Optional<Customer> findByCustomerNumber(String customerNumber);
     
-    // Buscar por DNI/NIF (si tienes ese campo)
+    // Buscar por DNI/NIF
     Optional<Customer> findByDocumentNumber(String documentNumber);
     
     // Buscar por email

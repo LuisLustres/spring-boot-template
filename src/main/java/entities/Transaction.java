@@ -198,7 +198,7 @@ public class Transaction {
     }
     
     private void generateReference() {
-        // Genera una referencia única para la transacción
+    	// Generar una referencia única para la transacción
         this.transactionReference = "TXN-" + 
             LocalDateTime.now().getYear() + "-" +
             String.format("%08d", Math.abs(this.hashCode()));
